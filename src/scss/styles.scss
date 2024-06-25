@@ -1,20 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import 'custom';
+@import '~bootstrap/scss/bootstrap';
+@import 'typography';
 
 body {
   font-family: 'Rubik', sans-serif;
 }
 
-.hero {
-  background-size: 100% 100%;
-  background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
-  background-image: radial-gradient(
-      113% 91% at 17% -35%,
-      #ffb9b9ff 1%,
-      #ff000000 99%
-    ),
-    radial-gradient(56% 91% at 101% 158%, #fff3b7ff 1%, #ff000000 99%),
-    radial-gradient(145% 91% at -6% 147%, #b7dbfdff 1%, #ff000000 99%);
+.download-btn {
+  background-color: #fcc254;
 }
+
+// .hero {
+//   background-size: 100% 100%;
+//   background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+//   background-image: radial-gradient(
+//       56% 91% at 101% 158%,
+//       #fff3b7ff 1%,
+//       #ff000000 99%
+//     ),
+//     radial-gradient(145% 91% at -6% 147%, #b7dbfdff 1%, #ff000000 99%);
+// }
 
 .carousel-indicators {
   position: static;
@@ -45,7 +50,7 @@ body {
 .features::before {
   content: '';
   position: absolute;
-  background: url('png/doodle-4181783_1920.png') repeat;
+  background: url('../png/doodle-4181783_1920.png') repeat;
   top: 0;
   right: 0;
   bottom: 0;
@@ -62,7 +67,7 @@ body {
 .bottom-banner::before {
   content: '';
   position: absolute;
-  background: url('png/doodle-4181783_1920.png') repeat;
+  background: url('../png/doodle-4181783_1920.png') repeat;
   top: 0;
   right: 0;
   bottom: 0;

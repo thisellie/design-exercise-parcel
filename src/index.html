@@ -8,15 +8,13 @@
   <link rel="shortcut icon" href="png/favicon.ico" type="image/x-icon">
   <script type="module" src="app.js"></script>
 
-  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="../node_modules/normalize.css/normalize.css">
   <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg border-bottom fixed-top bg-body">
-    <div class="container-md gx-5">
+  <nav class="navbar navbar-expand-lg border-bottom fixed-top border-primary bg-body">
+    <div class=" container-md gx-5">
       <div class="d-lg-none" style="width: 4.25rem;"></div>
       <a class="navbar-brand" href="#">
         <img src="./png/Abiva Logo 2.png" alt="The Abiva Logo" width="30">
@@ -43,7 +41,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">
+              <a href="#" class="nav-link text">
                 About</a>
             </li>
             <li class="nav-item">
@@ -68,7 +66,7 @@
               </ul>
             </li>
             <hr class="d-lg-none text-black-50">
-            <a href="#downloads" class="btn btn-primary text-white">
+            <a href="#downloads" class="download-btn btn btn-primary">
               Download
             </a>
             </li>
@@ -79,34 +77,48 @@
   </nav>
 
   <main>
-    <!-- Hero Section -->
-    <section class="hero py-5 mt-5 g-sm-5 border-bottom">
+    <section class="hero py-5 mt-5 mt-lg-4 border-bottom border-primary bg-body-secondary">
       <div class="container">
-        <div data-aos="fade-up" data-aos-duration="2500"
-          class="px-4 row justify-content-center align-items-center text-center text-md-start">
-          <div class="col-md-8 col-sm-8 order-2 order-md-2 text-md-start">
-            <div class="display-4 pt-5">Connect Students, Teachers, and Parents Seamlessly</div>
-            <p class="lead text-muted">Simplify communication, track progress, and foster collaboration in one powerful
-              mobile app for the entire school community.</p>
-            <button class="btn btn-primary btn-lg text-white">Download now!</button>
+        <div data-aos="fade-up" data-aos-duration="2500" class="row align-items-center text-center text-md-start px-4">
+          <div class="col-md-8 text-white order-2">
+            <h1 class="mb-0 display-4 poppins-black">Connect Students, Teachers, and Parents Seamlessly</h1>
+            <p class="lead">Simplify communication, track progress, and foster collaboration in one powerful mobile app
+              for the entire school community.</p>
+            <a href="#downloads" class="btn btn-outline-primary btn-lg">Download now!</a>
           </div>
-          <div class="col-md-4 col-sm-12 order-1 order-md-1">
+          <div class="col-md-4 order-1">
             <img src="png/mockup.png" class="img-fluid" alt="Mobile App">
           </div>
         </div>
       </div>
     </section>
 
-    <section class="py-5 bg-body-secondary bg-opacity-10" id="users">
+    <section class="border-bottom border-primary">
+      <div class="container py-5">
+        <div class="py-3 row g-4 text-center text-md-end d-flex align-items-center">
+          <div class="col-md-6">
+            <h1 class="display-1 pe-sm-5"><i class="bi bi-stars pe-2"></i>See the app in action!</h1>
+          </div>
+          <div class="col-md-6">
+            <div class="ratio ratio-16x9">
+              <iframe class="rounded shadow" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" title="YouTube video"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5" id="users">
       <div class="container g-5">
         <div class="text-center">
-          <h2 class="pt-lg-3"><i class="bi bi-person-check-fill pe-2"></i></i>Perfect for...</h2>
+          <h2 class="pt-lg-3 text-secondary-emphasis"><i class=" bi bi-person-check-fill pe-2"></i></i>Perfect for...
+          </h2>
           <p class="lead">This app keeps everyone involved in the educational process connected—teachers,
             administrators,
             students, and families—to support each child's learning journey.</p>
         </div>
 
-        <!-- For Students -->
         <div data-aos="fade-right" class="py-3 row g-4 align-items-center text-center text-md-start">
           <div class="col-md-8 col-sm-12 d-flex flex-column justify-content-center order-1 order-md-1 equal-height">
             <h3 class="display-5">For Students</h3>
@@ -120,7 +132,6 @@
           </div>
         </div>
 
-        <!-- For Teachers -->
         <div data-aos="fade-right" class="py-3 row g-4 align-items-center text-center text-md-start">
           <div class="col-md-4 col-sm-12 order-0 order-md-1 equal-height">
             <img
@@ -134,7 +145,6 @@
           </div>
         </div>
 
-        <!-- For Parents -->
         <div data-aos="fade-right" class="py-3 row g-4 align-items-center text-center text-md-start">
           <div class="col-md-8 col-sm-12 d-flex flex-column justify-content-center order-1 order-md-1 equal-height">
             <h3 class="display-5">For Parents</h3>
@@ -150,17 +160,16 @@
       </div>
     </section>
 
-    <!-- Features -->
-    <section class="features py-5 border-top border-bottom" id="features">
+    <section class="features py-5 border-top border-primary" id="features">
       <div class="container g-5">
         <div class="text-center">
-          <h2><i class="bi bi-clipboard-check-fill pe-2"></i>Features</h2>
+          <h2 class="text-secondary-emphasis"><i class=" bi bi-clipboard-check-fill pe-2"></i>Features</h2>
           <p class="lead">This Mobile App offers features you may like...</p>
         </div>
 
         <div class="row mt-5">
           <div class="col-lg-4 col-md-6 col-sm-12 mb-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="card h-100">
+            <div class="card h-100 shadow">
               <img
                 src="https://images.pexels.com/photos/6936137/pexels-photo-6936137.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 class="card-img-top" alt="...">
@@ -172,7 +181,7 @@
             </div>
           </div>
           <div class="col-lg-4 col-md-6 col-sm-12 mb-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="card h-100">
+            <div class="card h-100 shadow">
               <img
                 src="https://images.pexels.com/photos/4560083/pexels-photo-4560083.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 class="card-img-top" alt="...">
@@ -184,7 +193,7 @@
             </div>
           </div>
           <div class="col-lg-4 col-md-6 col-sm-12 mb-4" data-aos="fade-up" data-aos-delay="300">
-            <div class="card h-100">
+            <div class="card h-100 shadow">
               <img
                 src="https://images.pexels.com/photos/4012966/pexels-photo-4012966.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 class="card-img-top" alt="...">
@@ -195,7 +204,7 @@
             </div>
           </div>
           <div class="col-lg-4 col-md-6 col-sm-12 mb-4" data-aos="fade-up" data-aos-delay="400">
-            <div class="card h-100">
+            <div class="card h-100 shadow">
               <img
                 src="https://images.pexels.com/photos/8423092/pexels-photo-8423092.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 class="card-img-top" alt="...">
@@ -206,7 +215,7 @@
             </div>
           </div>
           <div class="col-lg-4 col-md-6 col-sm-12 mb-4" data-aos="fade-up" data-aos-delay="500">
-            <div class="card h-100">
+            <div class="card h-100 shadow">
               <img
                 src="https://images.pexels.com/photos/9810172/pexels-photo-9810172.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 class="card-img-top" alt="...">
@@ -217,7 +226,7 @@
             </div>
           </div>
           <div class="col-lg-4 col-md-6 col-sm-12 mb-4" data-aos="fade-up" data-aos-delay="600">
-            <div class="card h-100">
+            <div class="card h-100 shadow">
               <img
                 src="https://images.pexels.com/photos/2131251/pexels-photo-2131251.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 class="card-img-top" alt="...">
@@ -231,9 +240,8 @@
       </div>
     </section>
 
-    <!-- Review -->
-    <section class="my-5" id="review">
-      <div class="container g-5">
+    <section class="py-5 bg-body-secondary border-top border-bottom border-primary" id="review">
+      <div class="container g-5 text-white">
         <div class="text-center">
           <h2><i class="bi bi-stars"></i> Reviews</h2>
           <p class="lead">What the users have said about this app...</p>
@@ -254,7 +262,7 @@
                 <blockquote class="blockquote">
                   <p>Excellent app! Simplifies communication and boosts student engagement.</p>
                 </blockquote>
-                <figcaption class="blockquote-footer mb-0">
+                <figcaption class="blockquote-footer text-white-50 mb-0">
                   Mateo Santos, professor at <cite title="Source Title">University</cite>
                 </figcaption>
               </figure>
@@ -271,7 +279,7 @@
                 <blockquote class="blockquote">
                   <p>Fantastic tool! Enhances learning experience for students, teachers, and parents</p>
                 </blockquote>
-                <figcaption class="blockquote-footer mb-0">
+                <figcaption class="blockquote-footer text-white-50  mb-0">
                   Isabella Garcia, educator at <cite title="Source Title">College</cite>
                 </figcaption>
               </figure>
@@ -288,7 +296,7 @@
                 <blockquote class="blockquote">
                   <p>Essential for parents. Keeps us updated and connected seamlessly.</p>
                 </blockquote>
-                <figcaption class="blockquote-footer mb-0">
+                <figcaption class="blockquote-footer text-white-50  mb-0">
                   Lucas Ramos, parent
                 </figcaption>
               </figure>
@@ -305,7 +313,7 @@
                 <blockquote class="blockquote">
                   <p>User-friendly and efficient. A game-changer for school communication.</p>
                 </blockquote>
-                <figcaption class="blockquote-footer mb-0">
+                <figcaption class="blockquote-footer text-white-50  mb-0">
                   Mia Dela Cruz, student at <cite title="Source Title">Senior Highschool</cite>
                 </figcaption>
               </figure>
@@ -322,14 +330,13 @@
                 <blockquote class="blockquote">
                   <p>Streamlines teaching tasks. A must-have for educators in modern classrooms."</p>
                 </blockquote>
-                <figcaption class="blockquote-footer mb-0">
+                <figcaption class="blockquote-footer text-white-50  mb-0">
                   Alejandro Reyes, teacher at <cite title="Source Title">National Highschool</cite>
                 </figcaption>
               </figure>
             </div>
           </div>
 
-          <!-- Indicators -->
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#reviewsCarousel" data-bs-slide-to="0" class="active"
               aria-current="true" aria-label="Slide 1"></button>
@@ -342,10 +349,10 @@
       </div>
     </section>
 
-    <!-- Bottom Banner -->
-    <section class="bottom-banner mt-5 py-5 border-top" id="downloads">
+    <section class="bottom-banner py-5" id="downloads">
       <div class="pb-4 container text-center g-5">
-        <p class="display-5">Take learning on the go! Download our app now for seamless communication and collaboration.
+        <p class="display-5">Take learning on the go! Download our app now for seamless communication and
+          collaboration.
           Available on iOS and Android.</p>
         <div class="d-flex justify-content-center gap-2">
           <a href=""><img src="png/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" height="50"
@@ -356,7 +363,7 @@
     </section>
   </main>
 
-  <footer class="bd-footer py-4 py-md-5 bg-body-tertiary">
+  <footer class="bd-footer py-4 py-md-5 bg-body-tertiary border-top border-primary">
     <div class="container py-4 py-md-5 px-4 px-md-3">
       <div class="row">
         <div class="col-lg-3 mb-3">
@@ -368,7 +375,7 @@
           <p>© 2024 Abiva Publishing House, Inc. All Rights Reserved.</p>
         </div>
         <div class="col-6 col-lg-2 offset-lg-1 mb-3">
-          <h4>Links</h4>
+          <h4 class="text-secondary-emphasis">Links</h4>
           <ul class="list-unstyled">
             <li class="mb-2"><a class="nav-link" href="/">Home</a></li>
             <li class="mb-2"><a class="nav-link" href="#features">Features</a></li>
@@ -378,7 +385,7 @@
           </ul>
         </div>
         <div class="col-6 col-lg-2 mb-3">
-          <h4>Social</h4>
+          <h4 class="text-secondary-emphasis">Social</h4>
           <ul class="list-unstyled">
             <li class="mb-2"><a class="nav-link" href="https://www.facebook.com/abivapublishing">Facebook</a></li>
             <li class="mb-2"><a class="nav-link" href="https://www.instagram.com/abivapublishing/">Instagram</a></li>
@@ -389,7 +396,7 @@
           </ul>
         </div>
         <div class="col-6 col-lg-2 mb-3">
-          <h4>Sites</h4>
+          <h4 class="text-secondary-emphasis">Sites</h4>
           <ul class="list-unstyled">
             <li class="mb-2"><a href="" class="nav-link">Site 1</a></li>
             <li class="mb-2"><a href="" class="nav-link">Site 2</a></li>
@@ -399,7 +406,7 @@
           </ul>
         </div>
         <div class="col-6 col-lg-2 mb-3">
-          <h4>Projects</h4>
+          <h4 class="text-secondary-emphasis">Projects</h4>
           <ul class="list-unstyled">
             <li class="mb-2"><a class="nav-link" href="">Project 1</a></li>
             <li class="mb-2"><a class="nav-link" href="">Project 2</a></li>

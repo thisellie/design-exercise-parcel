@@ -2,6 +2,7 @@ import 'bootstrap'
 import AOS from 'aos'
 import $ from 'jquery'
 import 'aos/dist/aos.css'
+import './scss/styles.scss'
 
 AOS.init()
 
@@ -10,16 +11,20 @@ $(function () {
   function applyTheme(theme) {
     if (theme === 'light') {
       $('html').attr('data-bs-theme', 'light')
+      // $('.download-btn').removeClass('btn-dark').addClass('btn-light')
     } else if (theme === 'dark') {
       $('html').attr('data-bs-theme', 'dark')
+      // $('.download-btn').removeClass('btn-light').addClass('btn-dark')
     } else {
       if (
         window.matchMedia &&
         window.matchMedia('(prefers-color-scheme: dark)').matches
       ) {
         $('html').attr('data-bs-theme', 'dark')
+        // $('.download-btn').removeClass('btn-dark').addClass('btn-light')
       } else {
         $('html').attr('data-bs-theme', 'light')
+        // $('.download-btn').removeClass('btn-light').addClass('btn-dark')
       }
     }
   }
@@ -43,8 +48,8 @@ $(function () {
     applyTheme(theme)
     localStorage.setItem('selectedTheme', theme)
 
-    $('.dropdown-item').removeClass('active')
-    $(this).addClass('active')
+    $('.dropdown-item').removeClass('active').removeClass('text-black')
+    $(this).addClass('active').addClass('text-black')
   })
 })
 
