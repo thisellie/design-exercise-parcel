@@ -1,32 +1,17 @@
 import 'bootstrap'
 import AOS from 'aos'
 import $ from 'jquery'
-import 'aos/dist/aos.css'
 import './scss/styles.scss'
 
-AOS.init()
-
-// Dark mode
 $(function () {
+  AOS.init()
+
   function applyTheme(theme) {
-    if (theme === 'light') {
-      $('html').attr('data-bs-theme', 'light')
-      // $('.download-btn').removeClass('btn-dark').addClass('btn-light')
-    } else if (theme === 'dark') {
+    if (theme === 'light') $('html').attr('data-bs-theme', 'light')
+    else if (theme === 'dark') $('html').attr('data-bs-theme', 'dark')
+    else if (window.matchMedia('(prefers-color-scheme: dark)').matches)
       $('html').attr('data-bs-theme', 'dark')
-      // $('.download-btn').removeClass('btn-light').addClass('btn-dark')
-    } else {
-      if (
-        window.matchMedia &&
-        window.matchMedia('(prefers-color-scheme: dark)').matches
-      ) {
-        $('html').attr('data-bs-theme', 'dark')
-        // $('.download-btn').removeClass('btn-dark').addClass('btn-light')
-      } else {
-        $('html').attr('data-bs-theme', 'light')
-        // $('.download-btn').removeClass('btn-light').addClass('btn-dark')
-      }
-    }
+    else $('html').attr('data-bs-theme', 'light')
   }
 
   function initializeTheme() {
@@ -53,14 +38,11 @@ $(function () {
   })
 })
 
-// Animation
-
-$(document).ready(function () {
-  $(window).scroll(function () {
+$(function () {
+  $(function () {
     var positionFromTop = $('.hero').offset().top
     var windowHeight = $(window).height()
 
-    // Check if the section is in the viewport
     if (positionFromTop - windowHeight < 0) {
       $('.hero').addClass('show')
     } else {

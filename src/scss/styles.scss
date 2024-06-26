@@ -1,6 +1,7 @@
 @import 'custom';
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
 @import 'typography';
+@import '../../node_modules/aos/dist/aos.css';
 
 body {
   font-family: 'Poppins', sans-serif;
@@ -15,7 +16,7 @@ body {
 .bottom-banner::before {
   content: '';
   position: absolute;
-  background: url('../png/doodle-4181783_1920.png') repeat;
+  background: url('../png/doodle-bg.png') repeat;
   top: 0;
   right: 0;
   bottom: 0;
