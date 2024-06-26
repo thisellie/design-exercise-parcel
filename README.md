@@ -10,5 +10,5 @@
 
 **Running the Development Server:**
 
-1. In your terminal, run `npm run start` . This will start the Parcel development server.
+1. In your terminal, run `npm run start`. This will start the Parcel development server.
 2. By default, the server will be running at [http://localhost:1234/](http://localhost:1234/). Open this URL in your web browser to view the application.
